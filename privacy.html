@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Fairlog</title>
+<meta name="description" content="Fairlog privacy policy: what the app processes, where it is stored (Atlassian Forge, no egress), and how to exercise your data rights.">
+<style>
+  :root{--ink:#172B4D;--sub:#44546F;--bg:#FFFFFF;--line:#DCDFE4;--brand:#0C66E4}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  header{padding:18px 0;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-weight:800;font-size:20px;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+  .logo span{color:var(--brand)}
+  nav a{color:var(--sub);text-decoration:none;margin-left:20px;font-size:14px}
+  main{padding:48px 0 64px}
+  h1{font-size:32px;letter-spacing:-.02em;margin-bottom:6px}
+  .updated{color:var(--sub);font-size:13.5px;margin-bottom:28px}
+  h2{font-size:20px;margin:28px 0 8px}
+  p,li{font-size:15.5px;color:var(--ink)}
+  ul{padding-left:22px;margin:8px 0}
+  a{color:var(--brand)}
+  footer{padding:28px 0;color:var(--sub);font-size:13.5px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="index.html">fair<span>log</span></a>
+  <nav><a href="eula.html">EULA</a><a href="dpa.html">DPA</a><a href="support.html">Support</a></nav>
+</div></header>
+<main><div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Fairlog for Jira Cloud · Last updated: 24 August 2026</p>
+
+  <h2>The short version</h2>
+  <p>Fairlog runs entirely on Atlassian infrastructure (Forge). Your data never leaves Atlassian: the app has
+     no servers of its own, makes no external network calls, and sends nothing to third parties. We — the vendor —
+     have no direct access to your data.</p>
+
+  <h2>What Fairlog processes</h2>
+  <ul>
+    <li><strong>User identifiers</strong> — Atlassian accountId, display name, avatar link — of the people who log work in your Jira instance.</li>
+    <li><strong>Work time</strong> — Jira worklogs (date, duration, issue, author) and their billable/client marks.</li>
+    <li><strong>Billing configuration of your organisation</strong> — clients (accounts), rates (including rates tied to a specific person, which are personal data), billing statement lines and totals.</li>
+  </ul>
+  <p>No special categories of data are processed. No profiling, no advertising, no model training.</p>
+
+  <h2>Where it is stored</h2>
+  <p>All data lives in Atlassian Forge hosted storage (Key-Value Store and Forge SQL) tied to your Jira instance.
+     A cache of worklog data (including accountIds) is kept for the app's reporting features for as long as the app
+     is installed. If your Atlassian product is pinned to a data-residency region, Forge keeps the app's data in the
+     same region automatically. Atlassian Pty Ltd is the only subprocessor.</p>
+
+  <h2>Who can see what</h2>
+  <p>Rates and amounts are visible to the app's admin/finance roles only; managers see team hours; members see their
+     own hours. These restrictions are enforced server-side, not just hidden in the UI.</p>
+
+  <h2>Your rights &amp; data removal</h2>
+  <ul>
+    <li>Access, correction or deletion/anonymisation requests for a specific user are fulfilled via our support channel within 30 days.</li>
+    <li>On deletion, we remove the user's cached worklog rows, personal rates and app role; lines of already-issued billing statements are anonymised ("removed user"), as they are financial records of your organisation.</li>
+    <li>If you uninstall Fairlog, Atlassian retains Forge hosted storage for 28 days and then deletes it. Worklogs themselves are native Jira data and stay in your Jira.</li>
+  </ul>
+
+  <h2>Diagnostics</h2>
+  <p>We rely on Forge platform logs for diagnostics. Logs contain errors and technical identifiers only — never the
+     content of your worklogs, rates or statements.</p>
+
+  <h2>Billing</h2>
+  <p>Billing, refunds and licensing are handled by Atlassian Marketplace. We never see your payment details.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy and data requests: <a href="mailto:anton.bogoslov.io+fairlog@gmail.com">anton.bogoslov.io+fairlog@gmail.com</a>
+     (additional channel: <a href="https://github.com/abogoslov-io/fairlog-site/issues">GitHub Issues</a>).</p>
+</div></main>
+<footer><div class="wrap">
+  <p>© 2026 Fairlog · <a href="eula.html">EULA</a> · <a href="dpa.html">DPA</a> · <a href="support.html">Support</a></p>
+</div></footer>
+</body>
+</html>
