@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fairlog — Client Billing on Native Jira Worklogs</title>
+<meta name="description" content="Everything you pay Tempo for. On native Jira worklogs. $2 instead of $5+. Effective-dated rates, billing statements, drift alerts. Runs on Atlassian.">
+<style>
+  :root{--ink:#172B4D;--sub:#44546F;--bg:#FFFFFF;--soft:#F7F8F9;--line:#DCDFE4;--brand:#0C66E4;--ok:#1F845A}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{padding:18px 0;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-weight:800;font-size:20px;letter-spacing:-.02em}
+  .logo span{color:var(--brand)}
+  nav a{color:var(--sub);text-decoration:none;margin-left:20px;font-size:14px}
+  nav a:hover{color:var(--ink)}
+  .hero{padding:72px 0 56px;text-align:left}
+  h1{font-size:42px;line-height:1.15;letter-spacing:-.02em;max-width:21ch}
+  .hero p{margin-top:18px;font-size:19px;color:var(--sub);max-width:56ch}
+  .cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:600;text-decoration:none;font-size:15px}
+  .btn-primary{background:var(--brand);color:#fff}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink)}
+  .note{margin-top:10px;font-size:13px;color:var(--sub)}
+  .band{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;font-size:14px;color:var(--sub)}
+  .band .wrap{display:flex;gap:28px;flex-wrap:wrap}
+  section{padding:56px 0}
+  h2{font-size:28px;letter-spacing:-.01em;margin-bottom:8px}
+  .lead{color:var(--sub);max-width:60ch}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:32px}
+  .card{border:1px solid var(--line);border-radius:8px;padding:22px;background:#fff}
+  .card h3{font-size:17px;margin-bottom:8px}
+  .card p{font-size:14.5px;color:var(--sub)}
+  .card .pain{display:block;margin-top:12px;font-size:12.5px;color:#8590A2;border-left:3px solid var(--line);padding-left:10px;font-style:italic}
+  .pricing{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .price-line{font-size:34px;font-weight:800;margin-top:14px}
+  .price-line small{font-size:16px;font-weight:500;color:var(--sub)}
+  footer{padding:36px 0;color:var(--sub);font-size:13.5px}
+  footer a{color:var(--sub)}
+  .tag{display:inline-block;background:#E9F2FF;color:var(--brand);border-radius:4px;padding:2px 8px;font-size:12px;font-weight:600;margin-bottom:14px}
+  @media(max-width:640px){h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo">fair<span>log</span></div>
+  <nav><a href="#features">Why Fairlog</a><a href="#pricing">Pricing</a><a href="support.html">Support</a><a href="eula.html">EULA</a><a href="dpa.html">DPA</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="tag">Jira Cloud · Forge · Runs on Atlassian</div>
+  <h1>Everything you pay Tempo for. On native Jira worklogs. $2 instead of $5+.</h1>
+  <p>Fairlog is the billing layer for teams that invoice clients from Jira time: effective-dated rates,
+     invoice-ready billing statements, and drift alerts when worklogs change after you've billed.
+     Your data never leaves Atlassian.</p>
+  <div class="cta">
+    <a class="btn btn-primary" href="#marketplace" title="Marketplace listing is in review">Get it on Atlassian Marketplace</a>
+    <a class="btn btn-ghost" href="#features">See what it does</a>
+  </div>
+  <p class="note" id="marketplace">Marketplace listing is in review — link goes live on approval. Free for teams up to 10 users.</p>
+</div></div>
+
+<div class="band"><div class="wrap">
+  <div>✔ Real Jira worklogs, real authors</div>
+  <div>✔ Runs on Atlassian — zero egress</div>
+  <div>✔ Free ≤ 10 users · $2/user/month</div>
+</div></div>
+
+<section id="features"><div class="wrap">
+  <h2>Billing statements your accountant can work from — without leaving Jira.</h2>
+  <p class="lead">Every block below answers a real complaint from public Marketplace reviews. We didn't invent the pain.</p>
+  <div class="grid">
+    <div class="card"><h3>Change a rate from any date. Not from scratch.</h3>
+      <p>Rates are effective-dated: set a new rate from date X — past or future — and history stays priced as it was.
+         Resolution: person-on-project → project → person → client.</p>
+      <span class="pain">"You cannot set global billing rates with a date associated to them… You cannot schedule it ahead or fix it in retrospect."</span></div>
+    <div class="card"><h3>Issued statements never re-price. Ever.</h3>
+      <p>A statement snapshots every line at issue time. Rate changes later? Your sent numbers don't move.</p>
+      <span class="pain">"Change the billing rate… without impacting the previous time entries or with an effective date? You can't."</span></div>
+    <div class="card"><h3>From worklogs to an invoice-ready statement in two clicks.</h3>
+      <p>Pick a client and a period — download PDF (with your logo), XLSX or CSV. Excel optional.</p>
+      <span class="pain">"The creation of the invoice does not work within Tempo. We use exports and Excel."</span></div>
+    <div class="card"><h3>Nothing drifts silently.</h3>
+      <p>If a worklog changes after you've issued a statement — you'll know within 15 minutes: was/now diff and a
+         one-click correction statement.</p>
+      <span class="pain">"The numbers don't add up" — the classic month-end mystery, solved.</span></div>
+    <div class="card"><h3>Real Jira worklogs, real authors.</h3>
+      <p>Time logged through Fairlog is written as the user — not as an app. Your JQL
+         (<code>worklogAuthor = currentUser()</code>), dashboards and gadgets just work.</p>
+      <span class="pain">"Each worklog gets logged asApp… worklogAuthor = currentUser() returns zero results."</span></div>
+    <div class="card"><h3>Uninstall us and keep everything.</h3>
+      <p>Worklogs are Jira's. Billable and client marks live in worklog properties — inside Jira. Rates, accounts and
+         statements export to CSV. Your time data was never ours to hold.</p>
+      <span class="pain">"You will lose the worklog author and worklog description upon uninstalling."</span></div>
+    <div class="card"><h3>If Jira is up, your billing is up.</h3>
+      <p>Fairlog runs entirely on Atlassian infrastructure (Forge). No third-party servers, zero egress, data residency
+         follows your Jira region automatically.</p>
+      <span class="pain">"Outage for over 22hrs, no communication."</span></div>
+    <div class="card"><h3>Money on a need-to-know basis.</h3>
+      <p>Rates and amounts are visible to admin/finance roles only. Managers see team hours; members see their own.</p>
+      <span class="pain">Enforced server-side — not hidden in the UI.</span></div>
+  </div>
+</div></section>
+
+<section class="pricing" id="pricing"><div class="wrap">
+  <h2>The Tempo replacement that doesn't take your worklogs hostage.</h2>
+  <p class="lead">One edition. No forced add-on suite, no per-module pricing.</p>
+  <div class="price-line">$2 <small>per user / month · free for teams up to 10 · heavyweight suites charge $5+ per user</small></div>
+  <p class="note">Billing, refunds and licensing are handled by Atlassian Marketplace. Not a tax-invoice tool:
+     Fairlog produces billing statements / invoice-ready reports for your accounting system.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <p>© 2026 Fairlog · <a href="eula.html">EULA</a> · <a href="dpa.html">DPA</a> · <a href="support.html">Support</a></p>
+  <p style="margin-top:6px">Fairlog is not affiliated with Atlassian or Tempo. Tempo is a trademark of its owner;
+     quotes above are from public Atlassian Marketplace reviews.</p>
+</div></footer>
+</body>
+</html>

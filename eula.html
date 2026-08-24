@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EULA — Fairlog</title><style>
+  :root{--ink:#172B4D;--sub:#44546F;--line:#DCDFE4;--brand:#0C66E4;--warn:#FFF7D6}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 64px}
+  header{padding:18px 0;border-bottom:1px solid var(--line);margin-bottom:36px}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;padding-bottom:0}
+  .logo{font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
+  .logo span{color:var(--brand)}
+  nav a{color:var(--sub);text-decoration:none;margin-left:18px;font-size:14px}
+  h1{font-size:30px;margin-bottom:6px;letter-spacing:-.01em}
+  h2{font-size:19px;margin:28px 0 8px}
+  p,li{font-size:15px;color:var(--ink)}
+  ul{padding-left:22px}
+  .meta{color:var(--sub);font-size:13.5px;margin-bottom:18px}
+  .draft{background:var(--warn);border:1px solid #E2B203;border-radius:6px;padding:10px 14px;font-size:13.5px;margin-bottom:26px}
+  a{color:var(--brand)}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="index.html">fair<span>log</span></a>
+<nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="eula.html">EULA</a><a href="dpa.html">DPA</a></nav></div></header>
+<div class="wrap">
+<h1>End User License Agreement</h1>
+<p class="meta">Version 0.2 · August 2026 · Vendor: [legal entity — to be completed] · App: Fairlog — Client Billing &amp; Reports on Native Worklogs (Atlassian Forge)</p>
+<div class="draft">Draft under legal review. The published version may change before the Marketplace listing goes live.</div>
+
+<h2>1. License</h2>
+<p>Fairlog is licensed on a non-exclusive, non-transferable basis for the duration of an active Atlassian Marketplace
+subscription. The free tier (up to 10 site users) is provided "as is" under the same terms.
+<strong>Billing, refunds and licensing are handled by Atlassian Marketplace.</strong></p>
+
+<h2>2. Data</h2>
+<p>Fairlog runs exclusively on Atlassian infrastructure (Forge) and does not transmit customer data to any external
+servers (no egress). Worklogs remain native Jira objects owned by the customer. App configuration (accounts, rates,
+statements, cache) is stored in Forge hosted storage within the customer's instance and is exportable to CSV.
+Personal data processing is governed by the <a href="dpa.html">DPA</a>.</p>
+
+<h2>3. Platform dependency and Forge quotas</h2>
+<p>Fairlog depends on the availability, limits and quotas of the Atlassian Forge platform, which the Vendor does not
+control. <strong>If Forge platform quotas or platform incidents apply, some functions (sync, report and statement
+generation, background jobs) may be delayed or temporarily unavailable.</strong> The Vendor designs within quotas and
+monitors consumption, but cannot guarantee operation during platform limitations or Atlassian incidents. Material
+platform changes affecting functionality are reflected in release notes.</p>
+
+<h2>4. Support</h2>
+<p>Support channel is listed on the Marketplace listing. Critical issues (app inoperable, incorrect statement data):
+first response — <strong>target 1 business day</strong>. Other requests: <strong>within 5 business days</strong>.
+Security or availability incidents affecting customers are reported to Atlassian within 48 hours, with a customer
+notice published.</p>
+
+<h2>5. Disclaimer</h2>
+<p>Fairlog produces <strong>billing statements / invoice-ready reports</strong> — supporting documents for billing.
+It does not produce tax invoices and does not guarantee tax compliance in any jurisdiction. Calculations are based on
+Jira worklogs and customer-entered rates; customers review statements before sending them (drift alerts and review
+tooling are provided for this purpose).</p>
+
+<h2>6. Liability</h2>
+<p>The Vendor's aggregate liability is limited to the amounts paid for the App in the 12 months preceding the event.
+Indirect damages are excluded to the maximum extent permitted by law.</p>
+
+<h2>7. Term and termination</h2>
+<p>This agreement applies while the subscription is active. Upon uninstallation, Forge hosted storage data is retained
+by Atlassian for 28 days and then deleted per Forge platform policies. Customers are advised to export rates, accounts
+and statements (CSV) before uninstalling.</p>
+</div></body></html>

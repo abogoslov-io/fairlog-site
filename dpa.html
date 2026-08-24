@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPA — Fairlog</title><style>
+  :root{--ink:#172B4D;--sub:#44546F;--line:#DCDFE4;--brand:#0C66E4;--warn:#FFF7D6}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 64px}
+  header{padding:18px 0;border-bottom:1px solid var(--line);margin-bottom:36px}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;padding-bottom:0}
+  .logo{font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
+  .logo span{color:var(--brand)}
+  nav a{color:var(--sub);text-decoration:none;margin-left:18px;font-size:14px}
+  h1{font-size:30px;margin-bottom:6px;letter-spacing:-.01em}
+  h2{font-size:19px;margin:28px 0 8px}
+  p,li{font-size:15px;color:var(--ink)}
+  ul{padding-left:22px}
+  .meta{color:var(--sub);font-size:13.5px;margin-bottom:18px}
+  .draft{background:var(--warn);border:1px solid #E2B203;border-radius:6px;padding:10px 14px;font-size:13.5px;margin-bottom:26px}
+  a{color:var(--brand)}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="index.html">fair<span>log</span></a>
+<nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="eula.html">EULA</a><a href="dpa.html">DPA</a></nav></div></header>
+<div class="wrap">
+<h1>Data Processing Addendum</h1>
+<p class="meta">Version 0.2 · August 2026 · Controller: the customer · Processor: [legal entity — to be completed] · Sub-processor: Atlassian (Forge platform)</p>
+<div class="draft">Draft under legal review. The published version may change before the Marketplace listing goes live.</div>
+
+<h2>1. Subject and duration</h2>
+<p>Processing is limited to what the App's functions require (billing reports and statements based on Jira worklogs)
+for the duration of the subscription.</p>
+
+<h2>2. Data categories</h2>
+<ul>
+<li>Atlassian user identifiers (accountId), display names, avatar references.</li>
+<li>Working time: worklogs (date, duration, issue, author) and their billable/client marks.</li>
+<li>Organisational financial parameters: rates (including person-linked rates, which are personal data) and statement amounts.</li>
+</ul>
+<p>Data subjects: users of the customer's Jira instance. No special categories of data are processed.
+No profiling, advertising, or model training takes place.</p>
+
+<h2>3. Storage, residency and security</h2>
+<p>All data is stored in Atlassian Forge hosted storage (KVS/SQL) within the customer's instance.
+<strong>Data residency applies automatically</strong>: if the customer's Atlassian product is pinned to a region,
+Forge hosts, pins and migrates the App's data in the same region (Forge Data residency documentation, July 2026).
+Access to rates and amounts is restricted to App roles (admin/finance) and enforced server-side. The Vendor has no
+direct access to customer data (no external servers, no egress); diagnostics rely on Forge platform logs that contain
+errors and identifiers only — no personal data content.</p>
+
+<h2>4. Sub-processors</h2>
+<p>Atlassian (Forge) is the only sub-processor. Changes are announced via release notes / the listing.</p>
+
+<h2>5. Data subject requests and deletion</h2>
+<p>Requests (access / deletion / anonymisation) for a specific accountId are fulfilled via the Vendor's support channel
+<strong>within 30 days</strong>. Deleted or anonymised: worklog-cache rows, person-linked rates, the App role.
+Snapshot lines of issued statements are anonymised (author replaced), as they constitute the organisation's financial
+records. A self-service "purge user data" admin button is planned for release 1.0.x. Upon app uninstallation, Forge
+hosted storage is retained for 28 days by Atlassian and then deleted.</p>
+
+<h2>6. Incidents</h2>
+<p>The Controller is notified of personal data breaches without undue delay; Atlassian is notified within 48 hours.</p>
+
+<h2>7. Audit</h2>
+<p>Upon request, the Vendor provides a description of security measures (this DPA, the Forge/Runs on Atlassian
+architecture note, lightweight CAIQ).</p>
+</div></body></html>
